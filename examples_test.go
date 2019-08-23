@@ -13,7 +13,7 @@ import (
 
 // ////////////////////////////////////////////////////////////////////////////////// //
 
-func Example_ReadFile() {
+func ExampleReadFile() {
 	manifest, err := ReadFile("wagon-file-3.3.2.jar")
 
 	fmt.Printf("Error: %v\n", err)
