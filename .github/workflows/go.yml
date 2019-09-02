@@ -1,0 +1,52 @@
+name: Go
+
+on: [push, pull_request]
+
+jobs:
+  Ubuntu:
+    name: Linux
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        go: [ '1.10.x', '1.11.x', '1.12.x']
+
+    steps:
+      - name: Set up Go ${{ matrix.go }}
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ matrix.go }}
+        id: go
+
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Download dependencies
+        run: make deps-test
+
+      - name: Run tests
+        run: make test
+
+  macOS:
+    name: Mac OS X
+    runs-on: macOS-latest
+
+    strategy:
+      matrix:
+        go: [ '1.10.x', '1.11.x', '1.12.x']
+
+    steps:
+      - name: Set up Go ${{ matrix.go }}
+        uses: actions/setup-go@v1
+        with:
+          go-version: ${{ matrix.go }}
+        id: go
+
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Download dependencies
+        run: make deps-test
+
+      - name: Run tests
+        run: make test
