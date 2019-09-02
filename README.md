@@ -5,7 +5,9 @@
   <a href="https://goreportcard.com/report/github.com/essentialkaos/jar"><img src="https://goreportcard.com/badge/github.com/essentialkaos/jar"></a>
   <a href="https://travis-ci.org/essentialkaos/jar"><img src="https://travis-ci.org/essentialkaos/jar.svg"></a>
   <a href='https://coveralls.io/github/essentialkaos/jar?branch=master'><img src='https://coveralls.io/repos/github/essentialkaos/jar/badge.svg?branch=master' alt='Coverage Status' /></a>
+  <img src='https://github.com/essentialkaos/jar/workflows/Go/badge.svg' />
   <a href="https://codebeat.co/projects/github-com-essentialkaos-jar-master"><img alt="codebeat badge" src="https://codebeat.co/badges/ca62b3ee-901f-4410-9a0d-bca2d071b95d" /></a>
+  <a href="https://essentialkaos.com/ekol"><img src="https://gh.kaos.st/ekol.svg" alt="License" />
 </p>
 
 <p align="center"><a href="#installation">Installation</a> • <a href="#build-status">Build Status</a> • <a href="#license">License</a></p>
