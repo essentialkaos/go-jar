@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://godoc.org/pkg.re/essentialkaos/jar.v1"><img src="https://godoc.org/pkg.re/essentialkaos/jar.v1?status.svg"></a>
   <a href="https://goreportcard.com/report/github.com/essentialkaos/jar"><img src="https://goreportcard.com/badge/github.com/essentialkaos/jar"></a>
-  <a href="https://travis-ci.org/essentialkaos/jar"><img src="https://travis-ci.org/essentialkaos/jar.svg"></a>
+  <a href="https://travis-ci.com/essentialkaos/jar"><img src="https://travis-ci.com/essentialkaos/jar.svg"></a>
   <a href="https://coveralls.io/github/essentialkaos/jar?branch=master"><img src="https://coveralls.io/repos/github/essentialkaos/jar/badge.svg?branch=master" alt="Coverage Status" /></a>
   <a href="https://github.com/essentialkaos/jar/actions"><img src="https://github.com/essentialkaos/jar/workflows/Go/badge.svg" alt="GitHub Actions Status" /></a>
   <a href="https://codebeat.co/projects/github-com-essentialkaos-jar-master"><img alt="codebeat badge" src="https://codebeat.co/badges/ca62b3ee-901f-4410-9a0d-bca2d071b95d" /></a>
@@ -40,8 +40,8 @@ go get -u pkg.re/essentialkaos/jar.v1
 
 | Branch | Status |
 |--------|--------|
-| `master` | [![Build Status](https://travis-ci.org/essentialkaos/jar.svg?branch=master)](https://travis-ci.org/essentialkaos/jar) |
-| `develop` | [![Build Status](https://travis-ci.org/essentialkaos/jar.svg?branch=develop)](https://travis-ci.org/essentialkaos/jar) |
+| `master` | [![Build Status](https://travis-ci.com/essentialkaos/jar.svg?branch=master)](https://travis-ci.com/essentialkaos/jar) |
+| `develop` | [![Build Status](https://travis-ci.com/essentialkaos/jar.svg?branch=develop)](https://travis-ci.com/essentialkaos/jar) |
 
 ### License
 
