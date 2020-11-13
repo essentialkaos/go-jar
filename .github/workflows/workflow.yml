@@ -43,7 +43,7 @@ jobs:
 
       - name: Set up Node.js
         uses: actions/setup-node@v1
-        with: 10.x
+        with: '10.x'
 
       - name: Install codeclimate-test-reporter
         run: npm install -g codeclimate-test-reporter
