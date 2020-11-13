@@ -28,7 +28,7 @@ jobs:
         run: echo "PATH=$(go env GOPATH)/bin:$PATH" >> $GITHUB_ENV
 
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       - name: Download dependencies
         run: make deps-test
