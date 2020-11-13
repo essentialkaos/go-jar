@@ -1,4 +1,4 @@
-name: Go
+name: CI
 
 on:
   push:
@@ -23,6 +23,11 @@ jobs:
         with:
           go-version: ${{ matrix.go }}
         id: go
+
+      - name: Append GOBIN onto PATH
+        run: |
+          echo "::set-env name=GOPATH::$(go env GOPATH)"
+          echo "::set-env name=PATH::$PATH:$GOPATH/bin"
 
       - name: Checkout
         uses: actions/checkout@master
