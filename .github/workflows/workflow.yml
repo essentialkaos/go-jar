@@ -24,6 +24,9 @@ jobs:
           go-version: ${{ matrix.go }}
         id: go
 
+      - name: Setup PATH
+        run: echo "::add-path::${GOPATH}/bin"
+
       - name: Checkout
         uses: actions/checkout@master
 
@@ -39,7 +42,7 @@ jobs:
       - name: Send coverage to Coveralls
         env:
           COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
-        run: $(go env GOPATH)/bin/goveralls -service github -coverprofile cover.out
+        run: goveralls -service github -coverprofile cover.out
 
       - name: Set up Node.js
         uses: actions/setup-node@v1
