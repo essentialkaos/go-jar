@@ -30,5 +30,26 @@ jobs:
       - name: Download dependencies
         run: make deps-test
 
+      - name: Install goveralls
+        run: go get -v github.com/mattn/goveralls
+
       - name: Run tests
-        run: make test
+        run: go test -covermode count -coverprofile cover.out
+
+      - name: Send coverage to Coveralls
+        env:
+          COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
+        run: goveralls -service github -coverprofile cover.out
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with: 10.x
+
+      - name: Install codeclimate-test-reporter
+        run: npm install -g codeclimate-test-reporter
+
+      - name: Send coverage to Codebeat
+        env:
+          CODECLIMATE_API_HOST: https://codebeat.co/webhooks/code_coverage
+          CODECLIMATE_REPO_TOKEN: ${{ secrets.CODECLIMATE_TOKEN }}
+        run: codeclimate-test-reporter < cover.out
