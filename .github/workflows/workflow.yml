@@ -24,9 +24,6 @@ jobs:
           go-version: ${{ matrix.go }}
         id: go
 
-      - name: Setup PATH
-        run: echo "PATH=$(go env GOPATH)/bin:$PATH" >> $GITHUB_ENV
-
       - name: Checkout
         uses: actions/checkout@v2
 
