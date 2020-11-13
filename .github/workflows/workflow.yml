@@ -39,7 +39,7 @@ jobs:
         run: go get -v github.com/mattn/goveralls
 
       - name: Run tests
-        run: go test -covermode count -coverprofile cover.out
+        run: go test -v -covermode count -coverprofile cover.out
 
       - name: Send coverage to Coveralls
         env:
