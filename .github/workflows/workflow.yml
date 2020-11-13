@@ -25,7 +25,7 @@ jobs:
         id: go
 
       - name: Setup PATH
-        run: echo "::add-path::${GOPATH}/bin"
+        run: echo "PATH=$(go env GOPATH)/bin:$PATH" >> $GITHUB_ENV
 
       - name: Checkout
         uses: actions/checkout@master
@@ -34,6 +34,8 @@ jobs:
         run: make deps-test
 
       - name: Install goveralls
+        env:
+          GO111MODULE: off
         run: go get -v github.com/mattn/goveralls
 
       - name: Run tests
