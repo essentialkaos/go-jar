@@ -49,8 +49,8 @@ jobs:
 
       - name: Send coverage to Coveralls
         env:
-          COVERALLS_TOKEN: ${{ secrets.COVERALLS_TOKEN }}
-        run: goveralls -service github -coverprofile cover.out -repotoken $COVERALLS_TOKEN
+          COVERALLS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: goveralls -service github -coverprofile cover.out
         working-directory: src/github.com/essentialkaos/go-jar
 
       - name: Set up Node.js
