@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          path: src/github.com/${GITHUB_REPOSITORY}
+          path: src/github.com/essentialkaos/go-jar
 
       - name: Download dependencies
         run: make deps-test
