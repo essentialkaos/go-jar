@@ -1,6 +1,12 @@
-name: Go
+name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [master, develop]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '0 12 * * 0'
 
 jobs:
   Ubuntu:
@@ -9,44 +15,55 @@ jobs:
 
     strategy:
       matrix:
-        go: [ '1.12.x', '1.13.x', '1.14.x' ]
+        go: [ '1.14.x', '1.15.x' ]
 
     steps:
       - name: Set up Go
-        uses: actions/setup-go@v1
+        uses: actions/setup-go@v2
         with:
           go-version: ${{ matrix.go }}
         id: go
 
+      - name: Setup PATH
+        run: |
+          echo "GOPATH=${{ github.workspace }}" >> "$GITHUB_ENV"
+          echo "${{ github.workspace }}/bin" >> "$GITHUB_PATH"
+
       - name: Checkout
-        uses: actions/checkout@master
-
-      - name: Download dependencies
-        run: make deps-test
-
-      - name: Run tests
-        run: make test
-
-  macOS:
-    name: Mac OS X
-    runs-on: macOS-latest
-
-    strategy:
-      matrix:
-        go: [ '1.12.x', '1.13.x', '1.14.x' ]
-
-    steps:
-      - name: Set up Go
-        uses: actions/setup-go@v1
+        uses: actions/checkout@v2
         with:
-          go-version: ${{ matrix.go }}
-        id: go
-
-      - name: Checkout
-        uses: actions/checkout@master
+          path: src/github.com/essentialkaos/go-jar
 
       - name: Download dependencies
         run: make deps-test
+        working-directory: src/github.com/essentialkaos/go-jar
 
       - name: Run tests
-        run: make test
+        run: go test -v -covermode count -coverprofile cover.out ./...
+        working-directory: src/github.com/essentialkaos/go-jar
+
+      - name: Install goveralls
+        env:
+          GO111MODULE: off
+        run: go get -v github.com/mattn/goveralls
+
+      - name: Send coverage to Coveralls
+        env:
+          COVERALLS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: goveralls -service github -coverprofile cover.out
+        working-directory: src/github.com/essentialkaos/go-jar
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with: 
+          node-version: '10.x'
+
+      - name: Install codeclimate-test-reporter
+        run: npm install -g codeclimate-test-reporter
+
+      - name: Send coverage to Codebeat
+        env:
+          CODECLIMATE_API_HOST: https://codebeat.co/webhooks/code_coverage
+          CODECLIMATE_REPO_TOKEN: ${{ secrets.CODECLIMATE_TOKEN }}
+        run: codeclimate-test-reporter < cover.out
+        working-directory: src/github.com/essentialkaos/go-jar
