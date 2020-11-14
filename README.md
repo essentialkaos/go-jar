@@ -18,13 +18,7 @@
 
 ### Installation
 
-Before the initial install allows git to use redirects for [pkg.re](https://github.com/essentialkaos/pkgre) service (_reason why you should do this described [here](https://github.com/essentialkaos/pkgre#git-support)_):
-
-```
-git config --global http.https://pkg.re.followRedirects true
-```
-
-Make sure you have a working Go 1.12+ workspace (_[instructions](https://golang.org/doc/install)_), then:
+Make sure you have a working Go 1.14+ workspace (_[instructions](https://golang.org/doc/install)_), then:
 
 ```
 go get pkg.re/essentialkaos/go-jar.v1
@@ -40,8 +34,8 @@ go get -u pkg.re/essentialkaos/go-jar.v1
 
 | Branch | Status |
 |--------|--------|
-| `master` | [![Build Status](https://travis-ci.com/essentialkaos/go-jar.svg?branch=master)](https://travis-ci.com/essentialkaos/go-jar) |
-| `develop` | [![Build Status](https://travis-ci.com/essentialkaos/go-jar.svg?branch=develop)](https://travis-ci.com/essentialkaos/go-jar) |
+| `master` | ![CI](https://github.com/essentialkaos/go-jar/workflows/CI/badge.svg?branch=master) |
+| `develop` | ![CI](https://github.com/essentialkaos/go-jar/workflows/CI/badge.svg?branch=develop) |
 
 ### License
 
