@@ -3,7 +3,7 @@
 <p align="center">
   <a href="https://pkg.go.dev/github.com/essentialkaos/go-jar"><img src="https://pkg.go.dev/badge/github.com/essentialkaos/go-jar"></a>
   <a href="https://goreportcard.com/report/github.com/essentialkaos/go-jar"><img src="https://goreportcard.com/badge/github.com/essentialkaos/go-jar"></a>
-  <a href="https://github.com/essentialkaos/go-jar/actions"><img src="https://github.com/essentialkaos/go-jar/workflows/Go/badge.svg" alt="GitHub Actions Status" /></a>
+  <a href="https://github.com/essentialkaos/go-jar/actions"><img src="https://github.com/essentialkaos/go-jar/workflows/CI/badge.svg" alt="GitHub Actions Status" /></a>
   <a href="https://github.com/essentialkaos/go-jar/actions?query=workflow%3ACodeQL"><img src="https://github.com/essentialkaos/go-jar/workflows/CodeQL/badge.svg" /></a>
   <a href="https://coveralls.io/github/essentialkaos/go-jar?branch=master"><img src="https://coveralls.io/repos/github/essentialkaos/go-jar/badge.svg?branch=master" alt="Coverage Status" /></a>
   <a href="https://codebeat.co/projects/github-com-essentialkaos-go-jar-master"><img alt="codebeat badge" src="https://codebeat.co/badges/eafd2393-ab11-4d0e-bdc3-e51613c9e38a" /></a>
