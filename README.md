@@ -1,7 +1,7 @@
 <p align="center"><a href="#readme"><img src="https://gh.kaos.st/go-jar.svg"/></a></p>
 
 <p align="center">
-  <a href="https://pkg.go.dev/github.com/essentialkaos/go-jar"><img src="https://pkg.go.dev/badge/github.com/essentialkaos/go-jar"></a>
+  <a href="https://pkg.go.dev/pkg.re/essentialkaos/go-jar.v1"><img src="https://gh.kaos.st/godoc.svg" alt="PkgGoDev"></a>
   <a href="https://goreportcard.com/report/github.com/essentialkaos/go-jar"><img src="https://goreportcard.com/badge/github.com/essentialkaos/go-jar"></a>
   <a href="https://github.com/essentialkaos/go-jar/actions"><img src="https://github.com/essentialkaos/go-jar/workflows/CI/badge.svg" alt="GitHub Actions Status" /></a>
   <a href="https://github.com/essentialkaos/go-jar/actions?query=workflow%3ACodeQL"><img src="https://github.com/essentialkaos/go-jar/workflows/CodeQL/badge.svg" /></a>
