@@ -1,7 +1,7 @@
 <p align="center"><a href="#readme"><img src="https://gh.kaos.st/go-jar.svg"/></a></p>
 
 <p align="center">
-  <a href="https://kaos.sh/g/go-jar.v1"><img src="https://gh.kaos.st/godoc.svg" alt="PkgGoDev" /></a>
+  <a href="https://kaos.sh/g/go-jar"><img src="https://gh.kaos.st/godoc.svg" alt="PkgGoDev" /></a>
   <a href="https://kaos.sh/r/go-jar"><img src="https://kaos.sh/r/go-jar.svg" alt="GoReportCard" /></a>
   <a href="https://kaos.sh/w/go-jar/ci"><img src="https://kaos.sh/w/go-jar/ci.svg" alt="GitHub Actions CI Status" /></a>
   <a href="https://kaos.sh/w/go-jar/codeql"><img src="https://kaos.sh/w/go-jar/codeql.svg" alt="GitHub Actions CodeQL Status" /></a>
@@ -18,16 +18,16 @@
 
 ### Installation
 
-Make sure you have a working Go 1.16+ workspace (_[instructions](https://golang.org/doc/install)_), then:
+Make sure you have a working Go 1.17+ workspace (_[instructions](https://golang.org/doc/install)_), then:
 
 ```
-go get -d pkg.re/essentialkaos/go-jar.v1
+go get -d github.com/essentialkaos/go-jar
 ```
 
 For update to the latest stable release, do:
 
 ```
-go get -d -u pkg.re/essentialkaos/go-jar.v1
+go get -d -u github.com/essentialkaos/go-jar
 ```
 
 ### Build Status
