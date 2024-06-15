@@ -4,7 +4,7 @@
   <a href="https://kaos.sh/g/go-jar"><img src=".github/images/godoc.svg"/></a>
   <a href="https://kaos.sh/r/go-jar"><img src="https://kaos.sh/r/go-jar.svg" alt="GoReportCard" /></a>
   <a href="https://kaos.sh/w/go-jar/ci"><img src="https://kaos.sh/w/go-jar/ci.svg" alt="GitHub Actions CI Status" /></a>
-  <a href="https://kaos.sh/w/go-jar/codeql"><img src="https://kaos.sh/w/go-jar/codeql.svg" alt="GitHub Actions CodeQL Status" /></a>
+  <a href="https://kaos.sh/w/go-jar/codeql"><img src="https://kaos.sh/w/go-jar/codeql.svg" alt="GitHub Actions CodeQL Status" /></a><br/>
   <a href="https://kaos.sh/c/go-jar"><img src="https://kaos.sh/c/go-jar.svg" alt="Coverage Status" /></a>
   <a href="https://kaos.sh/b/go-jar"><img src="https://kaos.sh/b/eafd2393-ab11-4d0e-bdc3-e51613c9e38a.svg" alt="Codebeat badge" /></a>
   <a href="#license"><img src=".github/images/license.svg"/></a>
