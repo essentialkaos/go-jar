@@ -1,36 +1,22 @@
-<p align="center"><a href="#readme"><img src="https://gh.kaos.st/go-jar.svg"/></a></p>
+<p align="center"><a href="#readme"><img src=".github/images/card.svg"/></a></p>
 
 <p align="center">
-  <a href="https://kaos.sh/g/go-jar"><img src="https://gh.kaos.st/godoc.svg" alt="PkgGoDev" /></a>
+  <a href="https://kaos.sh/g/go-jar"><img src=".github/images/godoc.svg"/></a>
   <a href="https://kaos.sh/r/go-jar"><img src="https://kaos.sh/r/go-jar.svg" alt="GoReportCard" /></a>
   <a href="https://kaos.sh/w/go-jar/ci"><img src="https://kaos.sh/w/go-jar/ci.svg" alt="GitHub Actions CI Status" /></a>
   <a href="https://kaos.sh/w/go-jar/codeql"><img src="https://kaos.sh/w/go-jar/codeql.svg" alt="GitHub Actions CodeQL Status" /></a>
   <a href="https://kaos.sh/c/go-jar"><img src="https://kaos.sh/c/go-jar.svg" alt="Coverage Status" /></a>
   <a href="https://kaos.sh/b/go-jar"><img src="https://kaos.sh/b/eafd2393-ab11-4d0e-bdc3-e51613c9e38a.svg" alt="Codebeat badge" /></a>
-  <a href="#license"><img src="https://gh.kaos.st/apache2.svg"></a>
+  <a href="#license"><img src=".github/images/license.svg"/></a>
 </p>
 
-<p align="center"><a href="#installation">Installation</a> • <a href="#build-status">Build Status</a> • <a href="#license">License</a></p>
+<p align="center"><a href="#ci-status">CI Status</a> • <a href="#license">License</a></p>
 
 <br/>
 
 `jar` is a very simple Go package for reading manifest data from JAR files.
 
-### Installation
-
-Make sure you have a working Go 1.17+ workspace (_[instructions](https://go.dev/doc/install)_), then:
-
-```
-go get -d github.com/essentialkaos/go-jar
-```
-
-For update to the latest stable release, do:
-
-```
-go get -d -u github.com/essentialkaos/go-jar
-```
-
-### Build Status
+### CI Status
 
 | Branch | Status |
 |--------|----------|
