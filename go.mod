@@ -2,7 +2,7 @@ module github.com/essentialkaos/go-jar
 
 go 1.22
 
-require github.com/essentialkaos/check v1.4.0
+require github.com/essentialkaos/check v1.4.1
 
 require (
 	github.com/kr/pretty v0.3.1 // indirect
